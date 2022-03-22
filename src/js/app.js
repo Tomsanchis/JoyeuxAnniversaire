@@ -33,3 +33,13 @@ function randomid () {
 }
 
 randomid();
+
+function randomhobbies () {
+    let temphobbies = []
+    for (let i = 0; i < 20; i++) {
+        temphobbies.push(hobbies[i])
+    }
+    console.log(temphobbies);
+}
+
+randomhobbies();
