@@ -1,0 +1,25 @@
+{
+  "name": "joyeuxanniversaire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomsanchis/JoyeuxAnniversaire.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomsanchis/JoyeuxAnniversaire/issues"
+  },
+  "homepage": "https://github.com/Tomsanchis/JoyeuxAnniversaire#readme",
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
