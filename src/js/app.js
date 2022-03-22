@@ -23,24 +23,31 @@ const hobbies = [
     {id: 20, name: "box"},
 ]
 
-function random () {
-    let temprandom = []
+function getonbject () {
     for (let i = 0; i < 10; i++) {
-        let yearinscription = parseInt(Math.random() * (2023 - 2020) + 2020);
-        let dayinscription = parseInt(Math.random() * (32 - 1) + 1);
-        let monthinscription = parseInt(Math.random() * (13 - 0) + 0);
-
-        let yearanniv = parseInt(Math.random() * (1991 - 1960) + 1960);
-        let dayanniv = parseInt(Math.random() * (32 - 1) + 1);
-        let monthanniv = parseInt(Math.random() * (13 - 1) + 1);
-
-        let inscription = dayinscription + "/" + monthinscription + "/" + yearinscription;
-        let anniv = dayanniv + "/" + monthanniv + "/" + yearanniv;
-
-        const listusers = {id:uuidv4(), username: "test", inscription: inscription, hobbies: "test", anniverssaire: anniv};
-        temprandom.push(listusers);
+        const listusers = {id:uuidv4(), username: "e", inscription: inscriptionrandom(), hobbies: "hobbies", anniverssaire: annivrandom()}
+        console.log(listusers)
     }
-    console.log(temprandom);
 }
 
-random();
+getonbject();
+
+function inscriptionrandom () {
+    let yearinscription = parseInt(Math.random() * (2023 - 2020) + 2020);
+    let dayinscription = parseInt(Math.random() * (32 - 1) + 1);
+    let monthinscription = parseInt(Math.random() * (13 - 0) + 0);
+    let inscription = dayinscription + "/" + monthinscription + "/" + yearinscription;
+    return inscription;
+}
+
+function annivrandom () {
+    let yearanniv = parseInt(Math.random() * (1990 - 1960) + 1960);
+    let dayanniv = parseInt(Math.random() * (32 - 1) + 1);
+    let monthanniv = parseInt(Math.random() * (13 - 1) + 1);
+    let anniv = dayanniv + "/" + monthanniv + "/" + yearanniv;
+    return anniv;
+}
+
+function userrandom () {
+
+}
